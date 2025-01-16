@@ -8,12 +8,14 @@
     "@mui/icons-material": "^6.4.0",
     "@mui/material": "^6.4.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "web-vitals": "^4.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "test": "mocha --require jsdom-global/register"
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +42,9 @@
     "eslint": "^8.57.0",
     "globals": "^15.14.0",
     "react-scripts": "^5.0.1",
-    "typescript-eslint": "^8.20.0"
+    "typescript-eslint": "^8.20.0",
+    "@types/chai": "^5.0.1",
+    "@types/mocha": "^10.0.10",
+    "chai": "^5.1.2"
   }
 }
