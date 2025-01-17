@@ -7,7 +7,6 @@ module.exports = {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
-    "extends": ["airbnb", "airbnb/hooks", "airbnb-typescript"],
     "parserOptions": {
         "project": "./tsconfig.json"
     },
