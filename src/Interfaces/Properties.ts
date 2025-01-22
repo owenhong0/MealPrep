@@ -11,8 +11,8 @@ export enum Weekday {
 
 
 export interface MealWeek {
-    ingredients: IngredientsList;
-    dishes: DishList;
+    ingredients: IngredientList;
+    dishes: Recipe[];
     prepDays: MealDay[];
 }
 
@@ -21,5 +21,21 @@ export interface MealDay {
     brekkie: Recipe | null;
     lunch: Recipe | null;
     dinner: Recipe | null;
+}
+
+export interface Recipe {
+    name: string;
+    desc: string | null;
+}
+
+export interface IngredientList {
+    ingredient_dict: Record<string, Ingredient>;
+}
+
+export interface Ingredient {
+    name: string;
+    desc: string;
+    sources: string[];
+    price: number;
 }
 

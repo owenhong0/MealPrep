@@ -7,7 +7,6 @@ export default function Mainpage() {
     return(
         <Box>
             <PrimarySearchAppBar/>
-
         </Box>
     );
 }
